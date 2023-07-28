@@ -86,7 +86,7 @@ ol {
 }
 
 
-/**---------------------------------- Header */
+/**----------------------------------------------------------------------- Header */
 .header {
     border-bottom: 1px solid var(--border, #E7E9FC);
     padding-top: 24px;
@@ -169,10 +169,17 @@ ol {
 .main {}
 
 
-/**-------------------------Section 1 */
+/**-------------------------------------------------------------------Section 1 */
 .first-section {
     background-color: var(--mainSectionBackground-color);
     padding: 188px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
 }
 
 .first-title {
@@ -215,14 +222,16 @@ ol {
     background-color: #404BBF;
 }
 
-/**---------------------- Section 2 */
+/**----------------------------------------------- Section 2 */
 .goals-section {
     padding: 120px 0;
 }
 
 .goals-section-list {
     display: flex;
+    justify-content: center;
     gap: 24px;
+
 
 }
 
@@ -247,7 +256,17 @@ ol {
     color: var(--text-pageColor);
 }
 
-/**---------------------- Section 3 */
+.goals-icon {
+    padding: 24px 100px;
+    border-radius: 4px;
+    background: var(--cloud, #F4F4FD);
+    margin-bottom: 8px;
+    display: inline-block;
+    max-width: 264px;
+    max-height: 112px;
+}
+
+/**-------------------------------------------------------------------- Section 3 */
 .doing-section {
     padding-bottom: 120px;
 }
@@ -273,7 +292,7 @@ ol {
     width: calc((100% - 48px) / 3);
 }
 
-/**--------------------- Section 4 */
+/**-------------------------------------------------------------------- Section 4 */
 .team-section {
     background-color: #F4F4FD;
     padding: 120px 0;
@@ -298,6 +317,7 @@ ol {
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
     width: calc((100% - 72px) / 4);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .team-employee-information {
@@ -322,27 +342,74 @@ ol {
     text-align: center;
 }
 
+
+.socials-icon-list {
+    gap: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.socials-icon-item {
+    width: 40px;
+    height: 40px;
+    width: calc((100% - 3 * 24px)/ 4);
+}
+
+.socials-icon-link {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+
+}
+
+.socials-icon-link:hover {
+    background-color: #404bbf;
+}
+
+.socials-icon-link:focus {
+    background-color: #404bbf;
+
+}
+
 /** ------------------------------------------------------------Customers------------------- */
 .Customers-section {
     padding-top: 120px;
     padding-bottom: 120px;
 }
 
+.Customers-container {}
+
 .customers-title {
     color: var(--title-thirdColor #2e2f42);
-    text-align: center;
     font-size: 36px;
-    font-weight: 700;
-    line-height: 1.1;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
     display: flex;
-    margin: 0 auto;
-
-
+    justify-content: center;
 }
 
-/**----------------------- Footer */
+.Customers-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.Customers-item {
+    border-radius: 4px;
+    border: 1px solid var(--lightslate, #8E8F99);
+    padding: 16px 32px;
+    width: calc((100% - 2 * 24px)/ 6);
+}
+
+/**----------------------------------------------------------------------- Footer */
 
 .footer-page {
     background-color: var(--footer-pageBackgroundColor);
@@ -383,12 +450,18 @@ ol {
     letter-spacing: 0.02em;
 }
 
-.socials-footer-container {
+.footer-container-general {
     display: flex;
-    /* margin-left: 120px; */
+}
+
+.socials-footer-container {
+
+    margin-left: 120px;
 
 
 }
+
+.socials-container {}
 
 .socials-icon {}
 
@@ -397,13 +470,22 @@ ol {
 .socials-footer-list {
     display: flex;
     gap: 16px;
+    margin-top: 16px;
 }
 
-.socials-footer-item {}
+.socials-footer-item {
+    background-color: #4d5ae5;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
-/**---------------------------------- Portfolio */
+/**---------------------------------- ---------------------------------Portfolio */
 .portfolio-main {}
 
 .portfolio-section {
