@@ -31,7 +31,7 @@
                 <a class="header-logo link" href="./index.html">Web<span class="header-logo-ditails">Studio</span></a>
                 <ul class="header-navigation-list list">
                     <li class="header-navigation-item">
-                        <a class="header-navigation-link link" href="./index.html">Studio</a>
+                        <a class="header-navigation-link current link" href="./index.html">Studio</a>
                     </li>
                     <li class="header-navigation-item">
                         <a class="header-navigation-link link" href="./portfolio.html">Portfolio</a>
@@ -61,7 +61,7 @@
             <div class="container">
                 <h1 class="first-title">Effective Solutions
                     for Your Business</h1>
-                <button class="first-section-button" type="button">Order Service</button>
+                <button class="first-section-button" data-modal-open type="button">Order Service</button>
             </div>
         </section>
         <!--? section-2 -->
@@ -304,38 +304,38 @@
                         </div>
         </section>
         <!-- ?section-5 -->
-        <section class=" Customers-section">
-            <div class="Customers-container container">
+        <section class=" customers-section">
+            <div class="customers-container container">
                 <h2 class="customers-title">Customers</h2>
-                <ul class="Customers-list list">
-                    <li class="Customers-item"><a class="Customers-link" href="">
-                            <svg class="Customers-icon" width="104" height="56">
+                <ul class="customers-list list">
+                    <li class="customers-item"><a class="customers-link" href="">
+                            <svg class="customers-icon" width="104" height="56">
                                 <use href="./images/icons.svg#icon-yaco"></use>
                             </svg>
                         </a></li>
-                    <li class="Customers-item"><a class="Customers-link" href="">
-                            <svg class="Customers-icon" width="104" height="56">
+                    <li class="customers-item"><a class="customers-link" href="">
+                            <svg class="customers-icon" width="104" height="56">
                                 <use href="./images/icons.svg#icon-company"></use>
                             </svg>
                         </a></li>
-                    <li class="Customers-item"><a class="Customers-link" href="">
-                            <svg class="Customers-icon" width="104" height="56">
+                    <li class="customers-item"><a class="customers-link" href="">
+                            <svg class="customers-icon" width="104" height="56">
                                 <use href="./images/icons.svg#icon-compane2"></use>
                             </svg>
                         </a></li>
-                    <li class="Customers-item"><a class="Customers-link" href="">
-                            <svg class="Customers-icon" width="104" height="56">
+                    <li class="customers-item"><a class="customers-link" href="">
+                            <svg class="customers-icon" width="104" height="56">
                                 <use href="./images/icons.svg#icon-foster-peters"></use>
                             </svg>
                         </a></li>
-                    <li class="Customers-item"><a class="Customers-link" href="">
-                            <svg class="Customers-icon" width="104" height="56">
+                    <li class="customers-item"><a class="customers-link" href="">
+                            <svg class="customers-icon" width="104" height="56">
                                 <use href="./images/icons.svg#icon-brand"></use>
                             </svg>
                         </a></li>
-                    <li class="Customers-item"><a class="Customers-link" href="">
-                            <svg class="Customers-icon" width="104" height="56">
-                                <use href="./images/icons.svg#icon-companynew"></use>
+                    <li class="customers-item"><a class="customers-link" href="">
+                            <svg class="customers-icon" width="104" height="56">
+                                <use href="./images/icons.svg#icon-Logonew"></use>
                             </svg>
                         </a></li>
                 </ul>
@@ -381,6 +381,16 @@
         </div>
 
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="btn-modal" data-modal-close type="button">
+                <svr class="icon-close" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close-black"></use>
+                </svr>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
