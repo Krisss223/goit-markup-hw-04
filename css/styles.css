@@ -188,7 +188,7 @@ ol {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--contactsColor #434455);
+    color: var(--contactsColor, #434455);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -389,9 +389,9 @@ ol {
 }
 
 .socials-icon-item {
+    width: calc((100% - 3 * 24px) / 4);
     width: 40px;
     height: 40px;
-    width: calc((100% - 3 * 24px) / 4);
 }
 
 .socials-icon-link {
@@ -402,13 +402,11 @@ ol {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-icon-team {
-    fill: var(--socials-icon-team #f4f4fd)
+    fill: var(--socials-icon-team, #f4f4fd)
 }
 
 .socials-icon-link:hover {
@@ -429,7 +427,7 @@ ol {
 .customers-container {}
 
 .customers-title {
-    color: var(--title-thirdColor #2e2f42);
+    color: var(--title-thirdColor, #2e2f42);
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -441,7 +439,6 @@ ol {
 
 .customers-list {
     display: flex;
-    /* justify-content: center; */
     gap: 24px;
 }
 
@@ -544,7 +541,7 @@ ol {
 }
 
 .socials-icon {
-    fill: var(--socials-icon #f4f4fd)
+    fill: var(--socials-icon, #f4f4fd)
 }
 
 .socials-link {
@@ -555,6 +552,7 @@ ol {
     justify-content: center;
     border-radius: 50%;
     background-color: var(--buttonColor);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-link:hover {
@@ -599,22 +597,27 @@ ol {
     border: none;
     border: 1px solid var(--border, #E7E9FC);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-button:hover {
     color: #FFFFFF;
     background-color: #404BBF;
     border: 1px solid transparent;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-button:focus {
     color: #FFFFFF;
     background-color: #404BBF;
     border: 1px solid transparent;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
-    border: none;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-list {
@@ -640,24 +643,24 @@ ol {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-link :hover {
+.portfolio-link:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-link :focus {
+.portfolio-link:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-link :hover .portfolio-cover-text {
+.portfolio-link:hover .portfolio-cover-text {
     transform: translateY(0%);
 }
 
-.portfolio-link :focus .portfolio-cover-text {
-    transform: translateY(0%)
+.portfolio-link:focus .portfolio-cover-text {
+    transform: translateY(0%);
 }
 
 .portfolio-cover-text {
@@ -751,22 +754,22 @@ ol {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-modal :hover {
+.btn-modal:hover {
     background-color: #404bbf;
     border: none;
 }
 
-.btn-modal :focus {
+.btn-modal:focus {
     background-color: #404bbf;
     border: none;
 }
 
-.icon-close :hover {
-    fill: #ffffff
+.btn-modal:hover .icon-close {
+    fill: #ffffff;
 }
 
-.icon-close :focus {
-    fill: #ffffff
+.btn-modal:focus .icon-close {
+    fill: #ffffff;
 }
 
 .icon-close {
